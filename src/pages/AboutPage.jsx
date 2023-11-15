@@ -8,7 +8,9 @@ const AboutPage = () => {
         <p>
           Born and raised in Indonesia, currently based in Amsterdam, I'm a
           software developer dedicated to continuously enriching my expertise,
-          specializing in JavaScript with ReactJS and NodeJS.
+          specializing in <span style={{ color: "#F0DB4F" }}>JavaScript</span>{" "}
+          with <span style={{ color: "#5ED3F3" }}>ReactJS</span> and{" "}
+          <span style={{ color: "#84CE24" }}>NodeJS</span>.
         </p>
         <p>
           While my introduction to the world of tech began in recruitment, it
