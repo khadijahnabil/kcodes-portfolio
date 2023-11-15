@@ -14,15 +14,15 @@ const Navbar = () => {
         </li>
 
         <li className='nav-item'>
-          <Link to='/about'>.about me</Link>
+          <Link to='about'>.about me</Link>
         </li>
 
         <li className='nav-item'>
-          <Link to='/projects'>.projects</Link>
+          <Link to='projects'>.projects</Link>
         </li>
 
         <li className='nav-item'>
-          <Link to='/contact'>.contact me</Link>
+          <Link to='contact'>.contact me</Link>
         </li>
       </ul>
     </Wrapper>
