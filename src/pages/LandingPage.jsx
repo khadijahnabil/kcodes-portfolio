@@ -1,9 +1,6 @@
 import TypeIt from "typeit-react";
 import styled from "@emotion/styled";
 
-// add more things! I am a frontend, ambitious, passionate, fun developer.
-// find a way to make "developer" into pink color
-
 const LandingPage = () => {
   return (
     <Wrapper>
@@ -46,7 +43,7 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60vh;
+  min-height: 60vh;
 
   h1 {
     padding: 0;

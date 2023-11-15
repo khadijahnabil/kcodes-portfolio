@@ -18,51 +18,43 @@ const ProjectsPage = () => {
   return (
     <Wrapper>
       <h1>.projects</h1>
-      <div className='project-section'>
+      <div className='title'>
         <h2>.big projects</h2>
-        <div className='centered'>
-          <section className='cards'>
-            {bigProjects.map((project) => {
-              const { id, img, url, title } = project;
-              return (
-                <div key={id}>
-                  <a href={url} target='_blank'>
-                    <article className='card'>
-                      <img src={img} alt='project-image' />
-                      <h3 className='card-title'>{title}</h3>
-                    </article>
-                  </a>
-                </div>
-              );
-            })}
-          </section>
-        </div>
       </div>
+      <section className='cards'>
+        {bigProjects.map((project) => {
+          const { id, img, url, title } = project;
+          return (
+            <div key={id}>
+              <a href={url} target='_blank'>
+                <article className='card'>
+                  <img src={img} alt='project-image' />
+                  <h3 className='card-title'>{title}</h3>
+                </article>
+              </a>
+            </div>
+          );
+        })}
+      </section>
       <hr />
-      <div className='project-section'>
+      <div className='title'>
         <h2>.small projects</h2>
-        <div className='centered'>
-          <section className='cards'>
-            {smallProjects.map((project) => {
-              const { id, img, url, title } = project;
-              return (
-                <div key={id}>
-                  <a href={url} target='_blank'>
-                    <article className='card'>
-                      <img
-                        src={img}
-                        alt='project-image'
-                        className='small-img'
-                      />
-                      <h3 className='card-title'>{title}</h3>
-                    </article>
-                  </a>
-                </div>
-              );
-            })}
-          </section>
-        </div>
       </div>
+      <section className='cards'>
+        {smallProjects.map((project) => {
+          const { id, img, url, title } = project;
+          return (
+            <div key={id}>
+              <a href={url} target='_blank'>
+                <article className='card'>
+                  <img src={img} alt='project-image' className='small-img' />
+                  <h3 className='card-title'>{title}</h3>
+                </article>
+              </a>
+            </div>
+          );
+        })}
+      </section>
     </Wrapper>
   );
 };
@@ -71,11 +63,9 @@ const Wrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   min-height: 60vh;
+  flex-direction: column;
 
-  .project-section {
-    display: flex;
-    flex-wrap: wrap;
-
+  .title {
     h2 {
       margin: 30px auto;
       width: 12rem;
@@ -86,15 +76,11 @@ const Wrapper = styled.div`
     }
   }
 
-  .centered {
-    padding: 1rem 9rem 0;
-  }
-
   .cards {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-    gap: 13px;
+    justify-content: space-evenly;
+    padding: 1rem 9rem 0;
   }
 
   .card {
