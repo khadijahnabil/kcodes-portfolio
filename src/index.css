@@ -1,0 +1,39 @@
+:root {
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark;
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+
+  margin: 0px;
+  height: 100%;
+}
+
+a {
+  color: white;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #ff4b91;
+}
+
+body {
+  height: 100%;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  padding-left: 9rem;
+  margin-bottom: 0;
+  color: #ff4b91;
+}
+
+hr {
+  width: 80%;
+  border-bottom: 0.5px solid #888;
+  opacity: 30%;
+}
